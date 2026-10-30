@@ -1,0 +1,30 @@
+{
+  "playerCount": 1,
+  "players": [
+    {
+      "id": 1001,
+      "name": "Bjørn Reksten",
+      "nationality": "Norge",
+
+      "current": {
+        "age": 17,
+        "days": 31,
+        "tsi": 1140,
+        "salary": 3700,
+        "weeksInClub": 3,
+        "position": "MS",
+        "rating": 3.5
+      },
+
+      "skills": {
+        "keeper": 2,
+        "defending": 7,
+        "playmaking": 3,
+        "winger": 3,
+        "passing": 5,
+        "scoring": 4,
+        "setPieces": 1
+      }
+    }
+  ]
+}
