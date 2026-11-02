@@ -38,6 +38,34 @@ header{
     margin-bottom:30px;
 }
 
+.dashboard-nav{
+
+    display:flex;
+
+    gap:18px;
+}
+
+.dashboard-nav a{
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.dashboard-nav a:hover,
+.dashboard-nav a:focus-visible{
+
+    text-decoration:underline;
+}
+
 select{
 
     padding:10px;
