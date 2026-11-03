@@ -3,16 +3,16 @@ visualiseringsapp for hattrick.org
 
 ## Datakilde og historikk
 
-`data/fcb.xlsx` er kilden til dataene. Arbeidsboken holdes lokal og er ignorert
-av Git; legg din egen fil på denne stien. Legg nye spillerbilder til i `Data`-arket
-uten å fjerne tidligere rader. `Spillere`-arket viser siste verdier, mens
-`scripts/sync.py` eksporterer aktive spillere og hele historikken til
-`output/players.json`. Eksporten leser Excel-filen, men endrer den ikke.
+Datakilden er `data/fcb.xlsx`, ikke funnet noen god løsning for å legge denne i skyen sammen med resten, 
+men den oppdateres stort sett fra min pc.
+Lim inn rader i `Data`-arket uten å fjerne tidligere data. `Spillere`-arket viser siste verdier, mens
+`scripts/sync.py` eksporterer aktive spillere og hele historikken til`output/players.json`. 
+Eksporten leser Excel-filen, men endrer den ikke.
 
 ## Oppdatering
 
-Installer avhengighetene én gang, og kjør deretter synkroniseringen fra
-prosjektroten etter at du har lagret nye snapshot-rader i Excel:
+Installer disse én gang, og kjør deretter synkroniseringen fra
+prosjektroten Plog1/workspaces/hattrick etter å ha lagret nye snapshot-rader i Excel:
 
 ```sh
 python -m pip install -r requirements.txt
