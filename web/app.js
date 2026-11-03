@@ -333,15 +333,8 @@ function renderPlayer(
 
             <div>
 
-
-            renderHistory(player);
                 <h2>${player.name}</h2>
-
-        init().catch(error => {
-            document.getElementById("playerCard").textContent =
-                "Kunne ikke laste spillerdata. Kjør scripts/sync.py først.";
-            console.error(error);
-        });
+                <p>
                   ${player.current.age} år ·
                   ${player.current.days} dager
                 </p>
@@ -452,6 +445,11 @@ function renderPlayer(
 
     </div>
     `;
+    renderHistory(player);
 }
 
-init();git 
+init().catch(error => {
+    document.getElementById("playerCard").textContent =
+        "Kunne ikke laste spillerdata. Kjør scripts/sync.py først.";
+    console.error(error);
+});
